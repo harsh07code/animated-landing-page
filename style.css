@@ -1,0 +1,168 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:sans-serif;
+}
+
+body{
+ background:#0f172a;
+ color:white;
+}
+
+/* NAVBAR */
+nav{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:20px 60px;
+ background:rgba(255,255,255,0.05);
+ backdrop-filter:blur(10px);
+}
+
+nav ul{
+ display:flex;
+ list-style:none;
+ gap:25px;
+}
+
+nav li{
+ cursor:pointer;
+ transition:.3s;
+}
+
+nav li:hover{
+ color:#38bdf8;
+}
+
+.logo{
+ color:#38bdf8;
+}
+
+.btn{
+ padding:10px 20px;
+ border:none;
+ background:#38bdf8;
+ color:white;
+ border-radius:20px;
+ cursor:pointer;
+ transition:.3s;
+}
+
+.btn:hover{
+ transform:scale(1.1);
+}
+
+/* HERO */
+.hero{
+ height:90vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ background:linear-gradient(270deg,#0ea5e9,#9333ea,#0ea5e9);
+ background-size:600% 600%;
+ animation:bgMove 10s infinite;
+}
+
+@keyframes bgMove{
+ 0%{background-position:0%}
+ 50%{background-position:100%}
+ 100%{background-position:0%}
+}
+
+.hero h1{
+ font-size:60px;
+}
+
+.hero p{
+ margin:20px 0;
+ font-size:18px;
+}
+
+.hero button{
+ padding:12px 25px;
+ border:none;
+ background:white;
+ color:black;
+ border-radius:25px;
+ cursor:pointer;
+ transition:.3s;
+}
+
+.hero button:hover{
+ transform:translateY(-5px);
+}
+
+/* FEATURES */
+.features{
+ padding:80px 40px;
+ text-align:center;
+}
+
+.cards{
+ margin-top:40px;
+ display:flex;
+ justify-content:center;
+ gap:30px;
+ flex-wrap:wrap;
+}
+
+.card{
+ background:#1e293b;
+ padding:30px;
+ width:220px;
+ border-radius:15px;
+ transition:.4s;
+}
+
+.card:hover{
+ transform:translateY(-15px) scale(1.05);
+ background:#38bdf8;
+}
+
+/* PRICING */
+.pricing{
+ padding:80px 40px;
+ text-align:center;
+}
+
+.price-cards{
+ display:flex;
+ justify-content:center;
+ gap:30px;
+ margin-top:40px;
+ flex-wrap:wrap;
+}
+
+.price{
+ background:#1e293b;
+ padding:40px;
+ width:200px;
+ border-radius:15px;
+ transition:.3s;
+}
+
+.price span{
+ font-size:40px;
+ display:block;
+ margin-top:10px;
+}
+
+.price:hover{
+ transform:scale(1.1);
+}
+
+.popular{
+ background:#38bdf8;
+ color:black;
+ transform:scale(1.1);
+}
+
+/* FOOTER */
+footer{
+ text-align:center;
+ padding:25px;
+ background:#020617;
+ margin-top:40px;
+}
